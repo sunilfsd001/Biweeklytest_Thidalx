@@ -14,7 +14,7 @@ class Frogs {
                 }
             }
         }
-        if(croakCount>1)
+//        if(croakCount>1)
 
 
         return -1;

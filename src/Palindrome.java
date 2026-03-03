@@ -9,6 +9,7 @@ public class Palindrome {
         if(isPalindrome(s,left,right)){
 
         }
+        return "";
     }
     static boolean isPalindrome(String s,int left,int right){
         while(left<=right){
@@ -18,5 +19,6 @@ public class Palindrome {
             left++;
             right--;
         }
+        return true;
     }
 }
