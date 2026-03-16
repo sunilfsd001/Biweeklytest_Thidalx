@@ -1,5 +1,5 @@
 import java.util.*;
-class StatTest {
+class MaxProduct {
     public static void main(String[] args) {
         List<String> words= Arrays.asList("abcw","baz","foo","bar","xtfn","abcdef");
 
