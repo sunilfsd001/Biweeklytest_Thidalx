@@ -6,17 +6,17 @@ class KthLargest{
         int k=2;
         while(k > 1){
             int maxIdx=0;
-            int max=nums.get(0);
+            int max=Math.MIN_VALUE;
             for(int i=1;i<nums.size();i++){
                 if(max<nums.get(i)){
                     max=nums.get(i);
                     maxIdx=i;
                 }
             }
-            nums.set(maxIdx,0);
+            nums.set(maxIdx,Math.MIN_VALUE);
             k--;
         }
-        int max=0;
+        int max=Math.MIN_VALUE;
         for(int n:nums){
             max=Math.max(max,n);
         }
