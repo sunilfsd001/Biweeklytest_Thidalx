@@ -1,0 +1,25 @@
+import java.util.*;
+class StatTest {
+    public static void main(String[] args) {
+        List<String> words= Arrays.asList("abcw","baz","foo","bar","xtfn","abcdef");
+
+        int max=0;
+        for(int i=0;i<words.size();i++){
+            int len=words.get(i).length();
+            for(int j=i+1;j< words.size()-1;j++){
+                int curLen=words.get(j).length();
+                boolean isHaving=false;
+                for(char a:words.get(j).toCharArray()){
+                    if(words.get(i).indexOf(a)!=-1){
+                        isHaving=true;
+                        break;
+                    }
+                }
+                if(!isHaving){
+                    max=Math.max(max,len*curLen);
+                }
+            }
+        }
+        System.out.println(max);
+    }
+}
